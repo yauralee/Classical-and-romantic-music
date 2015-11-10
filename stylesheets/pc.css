@@ -1,5 +1,5 @@
 body {
-  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:"Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FBF3BF;
   font-size: 20px;
   margin: auto;
@@ -76,8 +76,14 @@ header {
 }
 footer {
   text-align: center;
-  clear: left;
 }
 footer hr{
   display: inline-block;
+}
+footer img {
+  height: 50px;
+}
+footer p {
+  font-style: italic;
+  color: slategrey;
 }
