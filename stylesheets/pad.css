@@ -1,0 +1,22 @@
+body {
+  margin: auto;
+  padding: auto;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+body > div:first-child {
+  background-color: #FBF3BF;
+  font-size: 20px;
+
+}
+header {
+  background-image: url(../image/header.jpg);
+  position: relative;
+  height: 307px;
+  background-size: 100% 307px;
+  background-repeat: no-repeat;
+  font-size: 3em;
+  color: darkgray;
+
+
+}
