@@ -1,0 +1,20 @@
+body {
+  margin: auto;
+  padding: auto;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 100%;
+  background-image: url(../image/¿¨À­Ñï.png) ;
+  background-position: 500px 500px;
+  position: fixed;
+}
+body > div:first-child {
+
+}
+header {
+  background-image: url(../image/¿¨À­Ñï.png);
+  position: relative;
+  height: 307px;
+  background-size: 768px 307px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
