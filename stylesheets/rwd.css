@@ -1,0 +1,191 @@
+body {
+  font-family:"Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #FBF3BF;
+  font-size: 20px;
+  margin: auto;
+  padding: auto;
+}
+
+
+header {
+  background-image: url(../image/header.jpg);
+  position: relative;
+  height: 250px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-size: 3.5em;
+  font-weight: 700;
+  color: beige;
+  text-align: center;
+  line-height: 250px;
+  margin: 0 0 30px 0;
+}
+#image-and-nav {
+  display: inline-block;
+  width: 35%;
+  vertical-align: top;
+}
+#image-and-nav div {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+#image-and-nav div img{
+  width: 80%;
+}
+#image-and-nav nav{
+  width: 100%;
+}
+#image-and-nav nav section {
+  text-align: center;
+  line-height: 90px;
+}
+#image-and-nav nav a {
+  text-decoration: none;
+  color: black;
+}
+#text-and-music {
+  display: inline-block;
+  width: 60%;
+}
+#text-and-music p {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 55px;
+  height: 400px;
+  overflow: hidden;
+}
+#music {
+  width: 100%;
+  text-align: center;
+}
+#music > div:first-child {
+  margin: 10px 0 30px 0;
+  color:  slategrey;
+}
+#music hr {
+  display: inline-block;
+}
+#music section {
+  display: inline-block;
+  width: 28%;
+  padding: 0 4% 20px 0;
+}
+#music section p {
+  height: 40px;
+}
+#music section a {
+  font-size: 0.9em;
+}
+footer {
+  text-align: center;
+}
+footer hr{
+  display: inline-block;
+}
+footer img {
+  height: 50px;
+}
+footer p {
+  font-style: italic;
+  color: slategrey;
+}
+@media screen and (min-width: 414px) and (max-width: 768px){
+  body {
+    font-size: 15px;
+  }
+  header {
+    font-size: 3em;
+  }
+  #image-and-nav div {
+    height: 200px;
+  }
+  #image-and-nav nav section {
+    height: 12%;
+    line-height: 55px;
+  }
+  #text-and-music p {
+    line-height: 22px;
+    height: 200px;
+  }
+  #music hr {
+    width: 18%;
+  }
+  #music section img {
+    width: 80%;
+  }
+  footer img {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 414px){
+  body {
+    font-size: 10px;
+  }
+  header {
+    height: 100px;
+    font-size: 2.5em;
+    line-height: 100px;
+  }
+  #image-and-nav {
+    display: block;
+    width: 100%;
+  }
+  #text-and-music {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+  }
+  #image-and-nav div {
+    width: 35%;
+    height: 120px;
+    display: inline-block;
+  }
+  #image-and-nav nav {
+    width: 60%;
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    line-height: 60px;
+  }
+  #image-and-nav hr {
+    display: none;
+  }
+  #image-and-nav nav section {
+    display: inline-block;
+    width: 30%;
+    height: 20px;
+    border: 1px solid #C4BFBF;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  #image-and-nav nav a {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    line-height: 20px;
+  }
+  #text-and-music p {
+    width: 100%;
+    line-height: 20px;
+    height: 200px;
+  }
+  #music {
+    width: 100%;
+  }
+  #music hr {
+    width: 18%;
+  }
+  #music section {
+    width: 40%;
+    vertical-align: top;
+  }
+  #music section img {
+    width: 60%;
+  }
+  footer img {
+    height: 25px;
+  }
+}
