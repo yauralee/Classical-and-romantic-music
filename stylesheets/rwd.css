@@ -185,7 +185,7 @@ footer p {
 }
 @media screen and (max-width: 414px){
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
   header {
     height: 100px;
@@ -240,6 +240,7 @@ footer p {
   }
   #music {
     width: 100%;
+    margin-top: 10px;
   }
   #music > div:first-child {
     margin: 5px 0 0 0;
