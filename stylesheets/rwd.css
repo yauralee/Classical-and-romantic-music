@@ -1,12 +1,10 @@
 body {
   font-family:"Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #FBF3BF;
-  font-size: 20px;
+  font-size: 18px;
   margin: auto;
   padding: auto;
 }
-
-
 header {
   background-image: url(../image/header.jpg);
   position: relative;
@@ -24,25 +22,29 @@ header {
   display: inline-block;
   width: 35%;
   vertical-align: top;
-}
-#image-and-nav div {
-  width: 100%;
-  height: 400px;
   text-align: center;
 }
-#image-and-nav div img{
-  width: 80%;
+#image-and-nav img {
+  width: 65%;
+  display: block;
+  margin-left: 40px;
 }
-#image-and-nav nav{
+#image-and-nav ul{
   width: 100%;
+  list-style-type: none;
+  padding: 0;
 }
-#image-and-nav nav section {
+#image-and-nav li {
   text-align: center;
-  line-height: 90px;
+  line-height: 30px;
 }
-#image-and-nav nav a {
+#image-and-nav a {
   text-decoration: none;
   color: black;
+}
+#image-and-nav hr {
+  width: 30px;
+  color: #C4BFBF;
 }
 #text-and-music {
   display: inline-block;
@@ -51,30 +53,39 @@ header {
 #text-and-music p {
   width: 100%;
   margin: 0 auto;
-  line-height: 55px;
-  height: 400px;
-  overflow: hidden;
+  line-height: 35px;
+  text-indent:2em
 }
 #music {
   width: 100%;
   text-align: center;
 }
 #music > div:first-child {
-  margin: 10px 0 30px 0;
+  margin: 10px 0 20px 0;
   color:  slategrey;
 }
 #music hr {
   display: inline-block;
+  width: 25%;
+  color: #9D9C9C;
 }
-#music section {
+#music ul {
+  width: 100%;
+  padding: 0;
+}
+#music li {
   display: inline-block;
   width: 28%;
-  padding: 0 4% 20px 0;
+  margin: 0 3% 20px 0;
+  vertical-align: top;
 }
-#music section p {
-  height: 40px;
+#music img {
+  width: 95%;
 }
-#music section a {
+#music li p {
+  line-height: 20px;
+}
+#music li a {
   font-size: 0.9em;
 }
 footer {
@@ -82,6 +93,8 @@ footer {
 }
 footer hr{
   display: inline-block;
+  width: 40%;
+  color: #9D9C9C;
 }
 footer img {
   height: 50px;
@@ -90,28 +103,80 @@ footer p {
   font-style: italic;
   color: slategrey;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  body {
+    font-size: 16px;
+  }
+  #text-and-music p {
+    line-height: 30px;
+  }
+}
 @media screen and (min-width: 414px) and (max-width: 768px){
   body {
     font-size: 15px;
   }
   header {
-    font-size: 3em;
+    height: 160px;
+    font-size: 2.6em;
+    line-height: 160px;
+    margin-bottom: 8px;
   }
-  #image-and-nav div {
-    height: 200px;
+  #image-and-nav {
+    display: block;
+    width: 100%;
+    vert-align: top;
+    margin-bottom: 10px;
   }
-  #image-and-nav nav section {
-    height: 12%;
-    line-height: 55px;
+  #text-and-music {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+  }
+  #image-and-nav img {
+    width: 18%;
+    display: inline-block;
+  }
+  #image-and-nav ul {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+    margin: 25px 0 0 40px;
+  }
+  #image-and-nav hr {
+    display: none;
+  }
+  #image-and-nav li {
+    display: inline-block;
+    width: 30%;
+    height: 20px;
+    border: 1px solid #C4BFBF;
+    border-radius: 3px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  #image-and-nav a {
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    line-height: 20px;
   }
   #text-and-music p {
-    line-height: 22px;
-    height: 200px;
+    width: 90%;
+    line-height: 28px;
+  }
+  #music > div:first-child {
+    margin: 10px 0 10px 0;
   }
   #music hr {
-    width: 18%;
+    width: 25%;
   }
-  #music section img {
+  #music li {
+    width: 28%;
+    margin: 0 1% 10px 0;
+  }
+  #music img {
     width: 80%;
   }
   footer img {
@@ -126,42 +191,43 @@ footer p {
     height: 100px;
     font-size: 2.5em;
     line-height: 100px;
+    margin-bottom: 5px;
   }
   #image-and-nav {
     display: block;
     width: 100%;
+    vert-align: top;
   }
   #text-and-music {
     display: block;
     width: 100%;
     vertical-align: top;
   }
-  #image-and-nav div {
-    width: 35%;
-    height: 120px;
+  #image-and-nav img {
+    width: 18%;
     display: inline-block;
+    margin-left: 10px;
   }
-  #image-and-nav nav {
+  #image-and-nav ul {
     width: 60%;
     display: inline-block;
-    height: 120px;
     vertical-align: top;
-    line-height: 60px;
+    line-height: 40px;
+    margin: 0 0 0 10px;
   }
   #image-and-nav hr {
     display: none;
   }
-  #image-and-nav nav section {
+
+  #image-and-nav li {
     display: inline-block;
     width: 30%;
     height: 20px;
-    border: 1px solid #C4BFBF;
-    border-radius: 3px;
     position: relative;
     text-align: center;
     overflow: hidden;
   }
-  #image-and-nav nav a {
+  #image-and-nav a {
     position: absolute;
     top: 0px;
     left: 8px;
@@ -170,20 +236,23 @@ footer p {
   #text-and-music p {
     width: 100%;
     line-height: 20px;
-    height: 200px;
+    font-size: 1.2em;
   }
   #music {
     width: 100%;
   }
+  #music > div:first-child {
+    margin: 5px 0 0 0;
+  }
   #music hr {
     width: 18%;
   }
-  #music section {
+  #music li {
     width: 40%;
-    vertical-align: top;
+    margin: 0 3% 0 0;
   }
-  #music section img {
-    width: 60%;
+  #music li img {
+    width: 80%;
   }
   footer img {
     height: 25px;
